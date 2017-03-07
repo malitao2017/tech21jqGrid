@@ -1,0 +1,483 @@
+@charset "utf-8";
+/* < general styles */
+html,body { /*height:100%;*/
+	font-size:100.1%;
+}
+
+.main-wrapper .sidebar .block .content .tableallstar {
+	text-align: center;
+	font-weight: bold;
+}
+
+td,th {
+	text-align:left;
+	vertical-align:middle;
+	font-weight:normal;
+	color: #000;
+}
+img { border:0; vertical-align:top; }
+
+ul,ol { list-style:none; }
+address { font-style:normal; }
+
+.fl{
+ float:left;	
+}
+
+.fr{
+ float:right;	
+}
+
+#errorMsg {
+ color:#900; 
+ font-size:14px;
+ border:1px solid #000000;
+ background-color:#FF6;
+ margin:3px 0; 
+}
+
+.errorTips {
+ color:#900; 
+ font-size:14px;
+ border:1px solid #CCC;
+ background-color:#FF6;
+ margin:3px 0;
+}
+
+.messageText {
+ color:#C10000; 
+ font-size:16px;
+ background-color:#FF6;
+ margin: 5px 0;
+}
+
+.submit_button{
+      background:  url(../images/icon/submit_buttont.gif);
+      width: 300px;
+      height: 50px;
+      color:#000;
+	  font-size:25px;
+}
+
+a { color:#364C88; font-weight:bold; text-decoration:none; outline:0; }
+a:hover { text-decoration:underline; }
+
+h1,h2,h3,h4,h5,h6 {
+	font-weight:bold;
+}
+h3 {
+	margin-top:5px;
+	color: #354B86;
+	font-weight:900;
+}
+.left { float:left!important; }
+.right { float:right!important; }
+
+.h300 {height:220px;}
+.w300 {width:300px;}
+
+/* ------------------------------------------------ */
+
+.junecolor {
+	background: -moz-radial-gradient(50% 600px 90deg, circle closest-corner, #000, #FFF, #FFF 1600px) no-repeat scroll center 102px #FFFFFF;
+	background: #FFF url(../images/bg_body2.jpg) no-repeat center 102px;
+	background-image: -webkit-gradient(radial, center 500, 800, center 500, 0, from(#FFFFFF), to(#000000));
+	background-image: -moz-radial-gradient(50% 500px 90deg, circle closest-corner, #000000, #FFFFFF, #FFFFFF 1600px);
+	text-align:center;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 75%;
+	line-height: 1;
+}
+
+h3.header h3.title {
+    font-family: 'BebasNeueRegular',Arial,sans-serif;
+    letter-spacing: 0;
+} 
+#page{
+	width:980px;	
+}
+
+#page_banner {
+	clear:both;
+	background: url("../images/bg/bg_page_banner.jpg") repeat-x scroll center top #C10000;	  
+	min-height:60px;
+	height:60px;
+	overflow:hidden;	
+	width:100%;
+	margin:0 0 5px 0;
+}
+
+.main-wrapper {
+	min-width: 980px;
+	width:980px;
+	margin:5px auto;
+	background-color:#FFFFFF;
+}
+
+/* Layout */
+.wrapper {
+    margin: 0 auto;
+    text-align: left;
+    width: 980px;		
+}
+
+
+#doc{
+	background: url("../images/bg/headerwrapper.png") repeat-x scroll center top #FF0000;	  
+	min-height: 120px;
+    min-width: 1000px;
+}
+
+#doc-wrapper {
+    width:980px;
+	margin:0 auto;	
+	background-color:#fff;	
+}
+	
+/*-- junecolor D4D2D3--*/
+ #headerwrapper {
+    background: url("../images/bg/headerwrapper.png") repeat-x scroll center top #FFFFFF;	
+	min-height: 32px;
+	width: 100%;
+	position: relative;
+	z-index: 1000;
+ }
+
+@media print {
+  #headerwrapper { display: none; }
+  #page_banner { display: none; }
+  .banner-full { display: none; }
+  .main-wrapper .areaR { display: none; }
+  .w200 { display: none; }  
+} 
+ 
+ #headerwrapper #headerbox{
+	width:980px;
+	margin:0 auto;
+ }
+ 
+#companyname{
+	margin: 0 auto;
+	padding: 10px 0 0 0;
+	width: 980px;
+	position:relative;
+	
+}
+  
+/*text-align:center; text-indent:12em;*/
+#companyname a {
+	padding: 15px 0 0 0;
+	color: #CCC;
+	font-size: 36px;
+	line-height: 30px;
+	height: 30px;
+	text-decoration: none;
+	text-align:center;	
+	text-transform:uppercase;
+	font-family: Impact;
+	letter-spacing: 0.2ex;
+	text-shadow: 0px 2px 3px #555;
+}
+
+/*	background: url("../images/logo.png") repeat-x scroll center top transparent;*/
+#companyname #league-logo {
+    height: 100px;
+    left: 10px;
+    position: absolute;
+    top: -60px;
+    width: 100px;
+    z-index: 999;
+}
+
+#navwrapper{
+	height: 32px;
+	width: 100%;
+    background: url("../images/bg/bg_mainnav.gif") repeat-x scroll center top #8A0000;	
+}
+
+/* 	 background: url("../images/bg/bg_nav.jpg") repeat-x scroll center top #FF0000; */
+#navwrapper #master_nav{
+	width:980px;
+	margin:0 auto;
+	height:32px;
+	font-weight:normal;
+}
+
+ 
+ #topheader { 
+  min-height:20px; 
+  width: 100%;
+  margin: 0 auto;
+  }
+ 
+.sidebar{
+    display: inline;
+    float: right;
+    margin: 5px 5px 10px 0;
+    width: 300px;
+	overflow:hidden;
+}
+
+.sidebar .block {
+    border: 1px solid #CCC;
+    margin-bottom: 7px;
+}
+
+/*#E3EAED*/
+.sidebar .block h2{
+	background: url("../images/bg/t1.gif") repeat scroll 0 0 #F4F4F4;
+    border-bottom: 1px solid #F6FBFD;	
+	color: #000;
+	font-size: 1.2em;
+	font-weight: bold;
+	line-height: 26px;
+	padding: 1px 10px 1px;
+	text-transform: uppercase;
+}
+
+/* #F0F6F8 
+ height: 1%;
+*/
+.sidebar .block .content{
+   background: none repeat scroll 0 0 #FFFFFF;
+   padding: 5px;  
+}
+
+.sidebar .block .topteams{
+   background: none repeat scroll 0 0 #FFFFFF;
+   padding: 0;
+   height: 1%;
+}
+
+ 
+
+.sidebar .block  ul, #column_left .block  ol {
+    list-style: none outside none;
+}
+/* -----------------end of side bar-------------------------- */
+
+.maincolumn{
+	display: inline;
+	float: left;
+	margin: 5px 0 10px 5px;
+	padding: 0;
+	width: 660px;
+}
+
+.maincolumn .block {
+	border: 1px solid #CCC;
+	margin-bottom: 7px;
+}
+
+/*#E3EAED*/
+.maincolumn .block h2{
+	border-bottom: 1px solid #F6FBFD;
+	color: #000;
+	font-size: 1.2em;
+	font-weight: bold;
+	line-height: 26px;
+	padding: 1px 10px 1px;
+	text-transform: uppercase;
+	background:#DDDDDD url(../images/bg/t1.gif) repeat-x;
+}
+
+/* #F0F6F8 */
+.maincolumn .block .content{
+	background: none repeat scroll 0 0 #FFFFFF;
+	font: 12px/14px Arial,sans-serif;
+	color:#666;
+	text-align:left;
+	padding: 5px;
+	min-height: 50px;
+}
+
+.maincolumn .block .content a{
+	color:#38508D;
+}
+
+.maincolumn .block .content p{
+   margin-bottom: 5px;
+
+}
+
+.maincolumn .block  ul, #column_left .block  ol {
+    list-style: none outside none;
+}
+
+.banner {
+	width:980px;
+	height:120px;
+	background-color:#DDDDDD;
+	margin:0 auto;
+	/* rounded corners for modern browsers */
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+}
+
+
+/* ------------------------------------------------------- */
+#header{
+	width:980px;
+	height:120px;
+	background-color:#C3C4C4;	
+	background: url("../images/bg/jv_masthead2.jpg") repeat scroll 0 0 transparent;	
+	margin:0 auto;
+}
+
+
+#footer {	
+	width:980px;
+	height:65px;
+	background:#EDEDED;
+	font-size:12px;	 
+	margin:0 auto;		 
+	overflow:hidden;
+	position:relative;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+}  
+
+/* header */
+#header .tagline{	    
+		font-size:28px;
+		color:#096;
+		text-align:center;		
+	}
+/* ------------------------------------------------------- */
+/* footer */
+#footer .copyright{	    
+		margin:0;
+		padding:0;
+		font-size:12px;
+		font-weight:700;
+		color:#666;
+		text-align:center;
+		line-height:65px;
+	    overflow:hidden;
+	}
+
+
+
+/*overlay*/
+a:active {
+  outline:none;
+}
+
+:focus {
+  -moz-outline-style:none;
+}
+
+
+/* ----------------- Left Area  ------------------- */
+.areaL{
+    display: inline;
+    float: left;
+    margin: 0 0 5px 5px;
+}
+
+.areaL .block {
+	border: 1px solid #CCC;
+	margin: 0 0 5px 0;
+}
+
+h2,h3 {
+	font-family: verdana,helvetica,arial,sans-serif;
+	margin:0;
+}
+
+.areaL .block h2{
+	text-align: left;
+	text-indent:0.5em;
+	text-transform: uppercase;
+	line-height: 30px;
+	color: #B90000;
+	font-family: verdana,helvetica,arial,sans-serif;
+    font-size: 14px;
+	font-weight: normal;
+	letter-spacing: 0px;	
+	background:#FAA7A2 url(../images/bg/t1.gif) repeat-x right top;	
+}
+
+.areaL .block h2 span{
+	color: #000000;	
+}
+
+.areaL .block h3{
+	color: #B90000;
+    font-family:"Times New Roman",Georgia,Serif;
+    font-size: 18px;
+    font-weight: normal;
+    letter-spacing: 0;
+    line-height: 30px;
+    text-align: left;
+    text-indent: 0.5em;
+    text-transform: uppercase;
+}
+
+.areaL .block .content{
+	padding: 5px;
+	min-height:200px;
+	text-align:left;
+}
+ 
+.areaL .block  ul, #column_left .block  ol {
+    list-style: none outside none;
+}
+
+/* ----------------- Right Area  ------------------- */
+.areaR{
+    display: inline;
+    float: right;
+    margin: 0 5px 5px 0;
+    overflow:hidden;
+}
+
+.areaR .block {
+    border: 1px solid #CCC;
+    margin-bottom: 7px;
+}
+
+.areaR .block h2{
+	text-align: left;
+	text-indent:0.5em;
+	text-transform: uppercase;
+	color: #304E80;
+	font-family: verdana,helvetica,arial,sans-serif;
+    letter-spacing: 0px;	
+	font-size: 14px;
+	font-weight: normal;
+	line-height: 30px;
+	background:#F4F4F4 url(../images/bg/t1.gif) repeat-x;
+}
+
+ 
+.areaR .block .content{
+   background: none repeat scroll 0 0 #FFFFFF;
+   padding: 0; 
+   min-height:200px;
+   padding:5px;
+}
+
+.areaR .block .content p{
+  text-align:left;
+}
+
+.areaR .block  ul, #column_left .block  ol {
+    list-style: none outside none;
+}
+
+.main-wrapper .maincolumn .block .content table tr td table tr td {
+	color: #000;
+}
+ 
+
+.bluetxt {
+	color: #00C;
+}
+
+.w780 {
+	width:760px;
+}
+.w200 {
+	width:200px;
+}

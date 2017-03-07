@@ -1,0 +1,11 @@
+
+jqgrid的练习demo
+
+
+http://localhost:8080/tech21jqGrid
+
+
+引入js等参考： jqgriddemo-src
+css images 和 js
+
+
